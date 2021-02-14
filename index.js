@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
-const fse = require('fs-extra');
+const fs = require('fs');
+const path = require('path');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 const md = require('./utils/generateMarkdown');
 
 
@@ -22,11 +24,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) { 
-    fse.outputFile(' ', data, err =>) {
-// should this be a json? add console.log to say complete.
-// json -> markdown
-}
-}
+    console.log(data);
+    let md = generateMarkdown(data);
+    fs.writeFile(path.join(__dirname,'output','README.md'), md, (err) => {
+        if(err) {
+            console.log(err);
+        } else {
+            console.log("Write file complete.");
+        }
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
@@ -56,13 +63,12 @@ function init() {
             type:'list',
             name: 'license',
             message: questions[4],
-            choices: ['Apache-2.0', 'BSD-3-Clause', 'BSD-2-Clause', 'GPL-3.0', 'LGPL-3.0', 'MIT', 'MPL-2.0', 'CDDL-1.0', 'EPL-2.0'],
-            },
+            choices: ['Apache-2.0', 'BSD-3-Clause', 'BSD-2-Clause', 'GPL-3.0', 'LGPL-3.0', 'MIT', 'MPL-2.0', 'CDDL-1.0', 'EPL-2.0', 'none'],
         },
         {
             type:'input',
             name: 'dependencies',
-            message: questions[5],
+            message: questions[5], //need default npm i
         },
         {
             type:'input',
@@ -73,16 +79,15 @@ function init() {
             type:'input',
             name: 'contribution',
             message: questions[7],
-        },        {
+        },        
+        {
             type:'input',
             name: 'testInstructions',
-            message: questions[8],
+            message: questions[8],  //default nmp test?
         },
     ]
-        
-
     ).then((answers) => {
-
+        writeToFile(answers);
     });
 }
 
