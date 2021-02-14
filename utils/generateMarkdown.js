@@ -100,7 +100,7 @@ ${liSection}\n
 If you have any questions, please feel free to reach out via one of the following avenues.\n
 #### Contact info\n
 [My GitHub](https://github.com/${data.username})\n
-[My email](${data.emailAddress})`;
+[My email](mailto:${data.emailAddress})`;
   return content;
 }
 

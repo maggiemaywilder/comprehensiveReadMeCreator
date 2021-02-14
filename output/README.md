@@ -1,6 +1,6 @@
-# fvbc
+# family habit tracker
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blueviolet.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![License](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Table of Contents
@@ -22,29 +22,29 @@
 
 ## Description
 
-hfvcnb
+a tracker of family habits
 
 ## Installation Guide
 
-fghv
+nmp i
 
 ## Usage Information
 
-fcfg
+it's awesome
 
 ## Contribution Guidelines
 
-vgfd
+email me
 
 ## Testing Instructions
 
-vgbfd
+npm test
 
 ## License Information
 
-Notice: This application is covered under the Apache-2.0 license.
+Notice: This application is covered under the MIT license.
 
- [License: Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+ [License: MIT](https://opensource.org/licenses/MIT)
 
 ## Questions
 
@@ -52,6 +52,6 @@ If you have any questions, please feel free to reach out via one of the followin
 
 #### Contact info
 
-[My GitHub](https://github.com/g c)
+[My GitHub](https://github.com/maggiemaywilder)
 
-[My email](fgfdcx)
+[My email](mailto:maggiemaywilder@gmail.com)
