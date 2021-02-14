@@ -1,6 +1,4 @@
-# fidgncx
-
-[![License](https://img.shields.io/badge/license-GPL%203.0-blueviolet.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+# Read me Generator
 
 
 ## Table of Contents
@@ -22,29 +20,26 @@
 
 ## Description
 
-fgd
+A node application to generate readme files for new repositories.
 
 ## Installation Guide
 
-gfdjbcvf
+Inquirer and fs are required from npm; initialize with npm i. 
 
 ## Usage Information
 
-figngbhfkgd
+This is a very basic version and will likely be added to in the future. Currently usage is as simple as reading the prompts
 
 ## Contribution Guidelines
 
-dfgfvc
+I can be reached by email or at my github for questions about contributing; see my contact information below. 
 
 ## Testing Instructions
 
-dfgfdh
+npm test
 
-##License Information
+## License Information
 
-Notice: This application is covered under the GPL-3.0 license.
-
- [License: GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Questions
 
